@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <header>
+      <h2 class="logo"></h2>
+      <div class="navigation">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    </header>
+    <main>
+        <h1 id="contact">Contact Information
+        </h1>  
+        <p id="sendmsg">Send a message with any questions or inquiries you may have!</p>
+        <p id="socials">Social Media</p>
+        <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSdBtsXInbTDCDgZLNOOfk8cXFydqb6oD4L9hxLfzw9JKPp65A/formResponse" method="POST" target="blank">
+          <h2 class="text"><input type="text" name="entry.2005620554" placeholder="NAME"></h2>
+          <h2 class="email"><input type="email" name="entry.1045781291" placeholder="E-Mail"></h2>
+          <h2 class="message1"><textarea name="entry.839337160" rows="5" cols="30" placeholder="MESSAGE"></textarea></h2>
+          <button class="sbmitbutton" type="submit">SUBMIT</button>
+        </form>
+  <img id="loal" src="imgs/person.png">
+  <img id="loal1"src="imgs/email.png">
+  <img id="loal2"src="imgs/chat.png">
+  <div class="container">
+    <div class="banner">
+      <a href="https://www.facebook.com/" class="fa fa-facebook" target="blank"></a>Facebook
+    </div>
+    <div class="banner">
+       <a target="blank" href="https://www.linkedin.com/in/alvinz4/" class="fa fa-linkedin"></a>LinkedIn
+    </div>
+    <div class="banner">
+       <a target="blank" href="https://github.com/"class="fa fa-github"></a>GitHub
+    </div>
+  </div>
+    </main>
+	<script src="functions.js">
+  </script>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Push the background behind other content */
+      background-image: url('./imgs/abstract.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</html>
