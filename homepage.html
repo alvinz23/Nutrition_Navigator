@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nutrition Navigator</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <main>
+      <section>
+        <header>
+          <h2 class="logo">Nutrition Navigator</h2>
+          <div class="navigation">
+            <a href="homepage.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          </div>
+        </header>
+        <div class="content">
+          <div class="info">
+            <h2 style="font-weight: bold;">Smarter Food Choices <br></h2><span><h3 class="made-easy">Made Simple With Nutrition Navigator</span></h3>
+            <p>Most enjoy indulging in meals but nobody enjoys being <br>unhealthy and destroying their nutritional goals, why not <br>enjoy fast food and meet your fitness goals simultaneously?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+          <button id="getStarted">GET STARTED</button>
+          <img src="imgs/play.png">
+        <script>
+            const getStartedButton = document.getElementById("getStarted");
+            getStartedButton.addEventListener("click", function() {
+            window.location.href = "getstarted.html";
+          });
+        </script>
+      </section>
+      <div class="slideshow">
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="functions.js"></script>
+
+  </div>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Push the background behind other content */
+      background-image: url('./imgs/abstract.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+</html>
