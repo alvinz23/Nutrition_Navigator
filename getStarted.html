@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <header>
+      <h2 class="logo">Nutrition Navigator</h2>
+      <div class="navigation">
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="left-section">
+      <h2 class="searchwords">
+        Search a restaurant or food item!
+      </h2>
+      <p id="press">Press enter after searching for results</p>
+  
+      <form role="search" id="form">
+        <input type="search" id="query" name="q" placeholder="Search..">
+        </form>
+      <h2 class="filters">
+        Results
+      </h2>
+      <section id="section">
+      </section>
+      </div>
+      <div class="right-section"> <!-- This is the right sidebar -->
+        <div class="counter">Nutrient Counter</div>
+        <div class="thewordsa">Select items to update the counter</div>
+        <div class="macros">
+          <h2 id="p">Protein: 0</h2>
+          <h2 id="pcal">Calories: 0</h2>
+          <h2 id="pfat">Total Fat: 0</h2>
+          <h2 id="psugar">Total Sugars: 0</h2>
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Push the background behind other content */
+      background-image: url('./imgs/abstract.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+<script src="nutritionix.js"></script>
+</html>
